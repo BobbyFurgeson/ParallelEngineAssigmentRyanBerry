@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6gwv1u1yo2m2"
+path="res://.godot/imported/low-detail-building-wide-b.obj-fb299b1eef10dc55c1d3a0269855d1d4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/low-detail-building-wide-b.obj-fb299b1eef10dc55c1d3a0269855d1d4.mesh"]
+
+source_file="res://KennyPack/Models/OBJ format/low-detail-building-wide-b.obj"
+dest_files=["res://.godot/imported/low-detail-building-wide-b.obj-fb299b1eef10dc55c1d3a0269855d1d4.mesh", "res://.godot/imported/low-detail-building-wide-b.obj-fb299b1eef10dc55c1d3a0269855d1d4.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

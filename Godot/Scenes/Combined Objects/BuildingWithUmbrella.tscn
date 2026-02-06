@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cu0h2x6q8r7a"]
+
+[ext_resource type="ArrayMesh" uid="uid://dcrd7hfrsaoba" path="res://KennyPack/Models/OBJ format/building-d.obj" id="1_5twaa"]
+[ext_resource type="ArrayMesh" uid="uid://bap1axp8h3nvu" path="res://KennyPack/Models/OBJ format/detail-parasol-a.obj" id="2_yof47"]
+
+[node name="BuildingWithUmbrella" type="Node3D" unique_id=367530213]
+
+[node name="BuildingD" type="MeshInstance3D" parent="." unique_id=813531986]
+mesh = ExtResource("1_5twaa")
+
+[node name="DetailParasolA" type="MeshInstance3D" parent="." unique_id=923523103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09238529, 0.7953602, -0.17819887)
+mesh = ExtResource("2_yof47")

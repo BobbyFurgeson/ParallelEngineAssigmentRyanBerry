@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://r6t6iwd31ggl"]
+
+[ext_resource type="PackedScene" uid="uid://cu0h2x6q8r7a" path="res://Scenes/Combined Objects/BuildingWithUmbrella.tscn" id="1_shjba"]
+[ext_resource type="ArrayMesh" uid="uid://xr8t65k60d2e" path="res://KennyPack/Models/OBJ format/building-c.obj" id="2_te8q5"]
+[ext_resource type="ArrayMesh" uid="uid://c1g01na3vyyi2" path="res://KennyPack/Models/OBJ format/building-e.obj" id="3_4gyme"]
+[ext_resource type="ArrayMesh" uid="uid://dkjsatthdnxy5" path="res://KennyPack/Models/OBJ format/building-b.obj" id="4_cqrln"]
+[ext_resource type="ArrayMesh" uid="uid://d4db4kxum56uo" path="res://KennyPack/Models/OBJ format/building-a.obj" id="5_vfndd"]
+
+[node name="Street" type="Node3D" unique_id=710562117]
+
+[node name="BuildingWithUmbrella" parent="." unique_id=367530213 instance=ExtResource("1_shjba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15027082, 0, 0.12228274)
+
+[node name="BuildingC" type="MeshInstance3D" parent="." unique_id=1259689438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.74946797, 0, 0.0065561533)
+mesh = ExtResource("2_te8q5")
+
+[node name="BuildingE" type="MeshInstance3D" parent="." unique_id=949276229]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0168028, 0, 0.089921474)
+mesh = ExtResource("3_4gyme")
+
+[node name="BuildingB" type="MeshInstance3D" parent="." unique_id=1859596375]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0590438, -1.1920929e-07, 0.04168102)
+mesh = ExtResource("4_cqrln")
+
+[node name="BuildingA" type="MeshInstance3D" parent="." unique_id=359719212]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9860175, 9.679794e-05, 0.032132328)
+mesh = ExtResource("5_vfndd")

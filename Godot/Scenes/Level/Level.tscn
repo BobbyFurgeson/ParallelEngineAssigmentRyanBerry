@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bvr3hqknm76qa"]
+
+[ext_resource type="PackedScene" uid="uid://r6t6iwd31ggl" path="res://Scenes/Combined Objects/Street.tscn" id="1_aei0q"]
+[ext_resource type="ArrayMesh" uid="uid://cxwugc48wx5qa" path="res://KennyPack/Models/OBJ format/building-h.obj" id="2_s0x6l"]
+[ext_resource type="ArrayMesh" uid="uid://bbjtjg2dnxf76" path="res://KennyPack/Models/OBJ format/building-j.obj" id="3_gyjo4"]
+[ext_resource type="ArrayMesh" uid="uid://ilhthinc1kda" path="res://KennyPack/Models/OBJ format/building-i.obj" id="4_pocpv"]
+[ext_resource type="ArrayMesh" uid="uid://dgp7hutejbpt6" path="res://KennyPack/Models/OBJ format/building-m.obj" id="5_0o5jl"]
+[ext_resource type="ArrayMesh" uid="uid://cqerk0tnguqfb" path="res://KennyPack/Models/OBJ format/building-n.obj" id="6_q23xf"]
+[ext_resource type="ArrayMesh" uid="uid://blijkwd0kpiye" path="res://KennyPack/Models/OBJ format/building-skyscraper-a.obj" id="7_acdvp"]
+[ext_resource type="ArrayMesh" uid="uid://baa33ispdajkq" path="res://KennyPack/Models/OBJ format/building-skyscraper-c.obj" id="8_jugp0"]
+[ext_resource type="ArrayMesh" uid="uid://ft6qdahreahh" path="res://KennyPack/Models/OBJ format/building-skyscraper-e.obj" id="9_nimtr"]
+[ext_resource type="ArrayMesh" uid="uid://68wbjdo3af17" path="res://KennyPack/Models/OBJ format/building-skyscraper-d.obj" id="10_6xrp6"]
+
+[node name="Node3D" type="Node3D" unique_id=606723085]
+
+[node name="Street" parent="." unique_id=710562117 instance=ExtResource("1_aei0q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.040911436, 1.1920929e-07, 1.2351246)
+
+[node name="BuildingH" type="MeshInstance3D" parent="." unique_id=1291702345]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.0423021, 2.3841858e-07, -1.7994901)
+mesh = ExtResource("2_s0x6l")
+
+[node name="BuildingJ" type="MeshInstance3D" parent="." unique_id=869725516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56549776, 2.3841858e-07, -1.9545546)
+mesh = ExtResource("3_gyjo4")
+
+[node name="BuildingI" type="MeshInstance3D" parent="." unique_id=1071357899]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.1909256, 0, -1.8790394)
+mesh = ExtResource("4_pocpv")
+
+[node name="BuildingM" type="MeshInstance3D" parent="." unique_id=1490513491]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.4975886, 2.3841858e-07, -1.8171109)
+mesh = ExtResource("5_0o5jl")
+
+[node name="BuildingN" type="MeshInstance3D" parent="." unique_id=1394257002]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.573484, 0, 1.5504537)
+mesh = ExtResource("6_q23xf")
+
+[node name="BuildingSkyscraperA" type="MeshInstance3D" parent="." unique_id=725891097]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.4218707, 0, -0.2682189)
+mesh = ExtResource("7_acdvp")
+
+[node name="BuildingSkyscraperC" type="MeshInstance3D" parent="." unique_id=1842537737]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.792075, 0, -1.7319629)
+mesh = ExtResource("8_jugp0")
+
+[node name="BuildingSkyscraperE" type="MeshInstance3D" parent="." unique_id=1928405865]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.178062, -2.3841858e-07, -1.7784619)
+mesh = ExtResource("9_nimtr")
+
+[node name="BuildingSkyscraperD" type="MeshInstance3D" parent="." unique_id=782471949]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.420912, -2.3841858e-07, 1.3344662)
+mesh = ExtResource("10_6xrp6")

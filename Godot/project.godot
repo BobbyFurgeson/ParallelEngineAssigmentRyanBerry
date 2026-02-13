@@ -12,8 +12,12 @@ config_version=5
 
 config/name="Godot"
 run/main_scene="uid://bvr3hqknm76qa"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[global_group]
+
+Player=""
 
 [physics]
 

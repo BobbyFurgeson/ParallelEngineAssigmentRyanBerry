@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bvr3hqknm76qa"]
+[gd_scene format=3 uid="uid://bvr3hqknm76qa"]
 
 [ext_resource type="PackedScene" uid="uid://r6t6iwd31ggl" path="res://Scenes/Combined Objects/Street.tscn" id="1_aei0q"]
 [ext_resource type="ArrayMesh" uid="uid://cxwugc48wx5qa" path="res://KennyPack/Models/OBJ format/building-h.obj" id="2_s0x6l"]
@@ -11,68 +11,73 @@
 [ext_resource type="ArrayMesh" uid="uid://ft6qdahreahh" path="res://KennyPack/Models/OBJ format/building-skyscraper-e.obj" id="9_nimtr"]
 [ext_resource type="ArrayMesh" uid="uid://68wbjdo3af17" path="res://KennyPack/Models/OBJ format/building-skyscraper-d.obj" id="10_6xrp6"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Player Controller/proto_controller/proto_controller.tscn" id="11_s0x6l"]
-[ext_resource type="PackedScene" uid="uid://dw08deptcbb6e" path="res://Scenes/Combined Objects/PressurePlate.tscn" id="12_gyjo4"]
+[ext_resource type="Script" uid="uid://c511pulp3lf75" path="res://Scripts/Caller.gd" id="12_pocpv"]
+[ext_resource type="Script" uid="uid://bpqh5v4ht4sio" path="res://Scripts/Receiver.gd" id="13_0o5jl"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_s0x6l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_s0x6l"]
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=1887702759]
 
-[node name="Street" parent="." instance=ExtResource("1_aei0q")]
+[node name="Street" parent="." unique_id=142873549 instance=ExtResource("1_aei0q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.040911436, 1.1920929e-07, 1.2351246)
 
-[node name="BuildingH" type="MeshInstance3D" parent="."]
+[node name="BuildingH" type="MeshInstance3D" parent="." unique_id=120372904]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.0423021, 2.3841858e-07, -1.7994901)
 mesh = ExtResource("2_s0x6l")
 
-[node name="BuildingJ" type="MeshInstance3D" parent="."]
+[node name="BuildingJ" type="MeshInstance3D" parent="." unique_id=1155373387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.56549776, 2.3841858e-07, -1.9545546)
 mesh = ExtResource("3_gyjo4")
 
-[node name="BuildingI" type="MeshInstance3D" parent="."]
+[node name="BuildingI" type="MeshInstance3D" parent="." unique_id=1655229241]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.1909256, 0, -1.8790394)
 mesh = ExtResource("4_pocpv")
 
-[node name="BuildingM" type="MeshInstance3D" parent="."]
+[node name="BuildingM" type="MeshInstance3D" parent="." unique_id=1734986748]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.4975886, 2.3841858e-07, -1.8171109)
 mesh = ExtResource("5_0o5jl")
 
-[node name="BuildingN" type="MeshInstance3D" parent="."]
+[node name="BuildingN" type="MeshInstance3D" parent="." unique_id=425752975]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.573484, 0, 1.5504537)
 mesh = ExtResource("6_q23xf")
 
-[node name="BuildingSkyscraperA" type="MeshInstance3D" parent="."]
+[node name="BuildingSkyscraperA" type="MeshInstance3D" parent="." unique_id=1663118167]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.4218707, 0, -0.2682189)
 mesh = ExtResource("7_acdvp")
 
-[node name="BuildingSkyscraperC" type="MeshInstance3D" parent="."]
+[node name="BuildingSkyscraperC" type="MeshInstance3D" parent="." unique_id=171681018]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.792075, 0, -1.7319629)
 mesh = ExtResource("8_jugp0")
 
-[node name="BuildingSkyscraperE" type="MeshInstance3D" parent="."]
+[node name="BuildingSkyscraperE" type="MeshInstance3D" parent="." unique_id=355798695]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 5.178062, -2.3841858e-07, -1.7784619)
 mesh = ExtResource("9_nimtr")
 
-[node name="BuildingSkyscraperD" type="MeshInstance3D" parent="."]
+[node name="BuildingSkyscraperD" type="MeshInstance3D" parent="." unique_id=23905040]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.420912, -2.3841858e-07, 1.3344662)
 mesh = ExtResource("10_6xrp6")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=517970985]
 transform = Transform3D(17.205816, 0, 0, 0, -0.0016302629, 0, 0, 0, -7.6585436, 2.7708879, 0, 0)
 mesh = SubResource("BoxMesh_s0x6l")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1868755353]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1761245018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 shape = SubResource("BoxShape3D_s0x6l")
 
-[node name="ProtoController" parent="." instance=ExtResource("11_s0x6l")]
+[node name="ProtoController" parent="." unique_id=1664697361 instance=ExtResource("11_s0x6l")]
 transform = Transform3D(0.0032512916, 0, -0.14996476, 0, 0.15, 0, 0.14996476, 0, 0.0032512916, 0, 0.167705, 0)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1859448498]
 transform = Transform3D(-0.7592186, 0.17957264, -0.62557244, -0.1109602, 0.91139776, 0.39628527, 0.6413073, 0.37028077, -0.6720247, -1.9929261, 2.0248187, -5.439021)
 
-[node name="PressurePlate" parent="." instance=ExtResource("12_gyjo4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.221267, 0.10051838, -0.19474779)
+[node name="Caller" type="Node3D" parent="." unique_id=1046223901 node_paths=PackedStringArray("receiver")]
+script = ExtResource("12_pocpv")
+receiver = NodePath("../Receiver")
+
+[node name="Receiver" type="Node3D" parent="." unique_id=442532129]
+script = ExtResource("13_0o5jl")
